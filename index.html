@@ -65,7 +65,10 @@
     </header>
     <main>
       <div class="slider" onclick="nextSlide()">
-        <div class="slide active">
+        <div
+          class="slide active"
+          style="background-image: url('./img/hero.jpg')"
+        >
           <h1>Electronic Logging Device</h1>
           <p>
             Hours of Service<br />Providing easy to use ELD/HOS solution,
@@ -76,7 +79,7 @@
             <a href="#" class="button">Download on the App Store</a>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide" style="background-image: url('./img/photo_1.jpg')">
           <h1>Electronic Logging Device</h1>
           <p>
             Inspection Report<br />Providing the Owner Operator and a Fleet
@@ -91,7 +94,7 @@
             <a href="#" class="button">Download on the App Store</a>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide" style="background-image: url('./img/photo_2.jpg')">
           <h1>Automation and Integration</h1>
           <p>
             TrackEnsure takes care of automation and integration challenges
@@ -110,6 +113,7 @@
         </div>
       </div>
     </main>
+
     <footer></footer>
     <script>
       let currentSlide = 0;
