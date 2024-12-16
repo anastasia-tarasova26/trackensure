@@ -8,7 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #173ec1;
   padding: 10px 20px;
   color: white;
 }
@@ -24,7 +24,7 @@ header {
 /* Контейнер для контактов */
 .contacts {
   display: flex;
-  align-items: left; /* Выравнивание по вертикали */
+  align-items: center;
 }
 
 .contacts-list {
@@ -42,7 +42,7 @@ header {
 }
 
 .contacts-item:hover {
-  text-decoration: underline; /* Эффект при наведении */
+  text-decoration: underline;
 }
 
 .menu-container {
@@ -78,12 +78,13 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #444;
+  background-color: #173ec1;
   list-style-type: none;
   margin: 0;
   padding: 0;
   min-width: 200px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
 .dropdown li {
@@ -102,11 +103,11 @@ header {
 }
 
 .dropdown li a:hover {
-  background-color: #555;
+  background-color: #104486;
 }
 
 .login-button {
-  background-color: #007bff;
+  background-color: #008dd8;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -117,4 +118,61 @@ header {
 
 .login-button:hover {
   background-color: #0056b3;
+}
+
+/* Слайдер */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* Для размещения всех слайдов в линии */
+  height: 100%;
+  transition: transform 0.5s ease-in-out; /* Плавное переключение */
+}
+
+.slide {
+  flex: 1 0 100%; /* Каждый слайд занимает 100% ширины */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Радиокнопки скрыты */
+input[type="radio"] {
+  display: none;
+}
+
+/* Позиционирование слайдов */
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+/* Кликабельная область для переключения */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }

@@ -63,8 +63,26 @@
       </nav>
       <button class="login-button">Login</button>
     </header>
+    <main>
+      <div class="slider">
+        <!-- Радиокнопки для переключения слайдов -->
+        <input type="radio" name="slide" id="slide1" checked />
+        <input type="radio" name="slide" id="slide2" />
+        <input type="radio" name="slide" id="slide3" />
 
-    <main></main>
+        <!-- Контейнер для слайдов -->
+        <div class="slides">
+          <div class="slide"><img src="image1.jpg" alt="Слайд 1" /></div>
+          <div class="slide"><img src="image2.jpg" alt="Слайд 2" /></div>
+          <div class="slide"><img src="image3.jpg" alt="Слайд 3" /></div>
+        </div>
+
+        <!-- Невидимая область, чтобы клики срабатывали на весь экран -->
+        <label for="slide1" class="nav"></label>
+        <label for="slide2" class="nav"></label>
+        <label for="slide3" class="nav"></label>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
