@@ -81,6 +81,10 @@ header {
   padding: 10px 15px;
   display: block;
 }
+.menu > li:hover {
+  background-color: #104486;
+  border-radius: 10px;
+}
 
 /* Показываем dropdown при наведении */
 .menu > li:hover .dropdown,
