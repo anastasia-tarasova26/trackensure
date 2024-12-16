@@ -64,25 +64,62 @@
       <button class="login-button">Login</button>
     </header>
     <main>
-      <div class="slider">
-        <!-- Радиокнопки для переключения слайдов -->
-        <input type="radio" name="slide" id="slide1" checked />
-        <input type="radio" name="slide" id="slide2" />
-        <input type="radio" name="slide" id="slide3" />
-
-        <!-- Контейнер для слайдов -->
-        <div class="slides">
-          <div class="slide"><img src="image1.jpg" alt="Слайд 1" /></div>
-          <div class="slide"><img src="image2.jpg" alt="Слайд 2" /></div>
-          <div class="slide"><img src="image3.jpg" alt="Слайд 3" /></div>
+      <div class="slider" onclick="nextSlide()">
+        <div class="slide active">
+          <h1>Electronic Logging Device</h1>
+          <p>
+            Hours of Service<br />Providing easy to use ELD/HOS solution,
+            compliant with FMCSA regulations eCFR Title 49, part 395.
+          </p>
+          <div class="buttons">
+            <a href="#" class="button">Get it on Play Market</a>
+            <a href="#" class="button">Download on the App Store</a>
+          </div>
         </div>
-
-        <!-- Невидимая область, чтобы клики срабатывали на весь экран -->
-        <label for="slide1" class="nav"></label>
-        <label for="slide2" class="nav"></label>
-        <label for="slide3" class="nav"></label>
+        <div class="slide">
+          <h1>Electronic Logging Device</h1>
+          <p>
+            Inspection Report<br />Providing the Owner Operator and a Fleet
+            Owner with ability to receive cheaper services through TrackEnsure
+            Marketplace. The services will be offered by various providers who
+            could offer fuel discounts, better factoring options, more efficient
+            logistics, etc. The ELD user will be able to post his or her own
+            offers and requests.
+          </p>
+          <div class="buttons">
+            <a href="#" class="button">Get it on Play Market</a>
+            <a href="#" class="button">Download on the App Store</a>
+          </div>
+        </div>
+        <div class="slide">
+          <h1>Automation and Integration</h1>
+          <p>
+            TrackEnsure takes care of automation and integration challenges
+            letting the trucking companies concentrate on what they do best -
+            moving the world and its contents. TrackEnsure automation reduces
+            the number of tasks that drivers, operators, dispatchers, managers,
+            company owners have to handle manually. In case where human
+            intervention is required TrackEnsure will remind and notify, watch
+            over and later verify once more that everything is getting done and
+            nothing goes missing.
+          </p>
+          <div class="buttons">
+            <a href="#" class="button">Get it on Play Market</a>
+            <a href="#" class="button">Download on the App Store</a>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>
+    <script>
+      let currentSlide = 0;
+
+      function nextSlide() {
+        const slides = document.querySelectorAll(".slide");
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active");
+      }
+    </script>
   </body>
 </html>
