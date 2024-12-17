@@ -67,7 +67,7 @@
       <div class="slider" onclick="nextSlide()">
         <div
           class="slide active"
-          style="background-image: url('./img/hero.jpg')"
+          style="background-image: url('./img/photo_3.jpg')"
         >
           <h1>Electronic Logging Device</h1>
           <p>
@@ -111,19 +111,123 @@
             <a href="#" class="button">Download on the App Store</a>
           </div>
         </div>
+        <div class="slide" style="background-image: url('./img/hero.jpg')">
+          <h1>Electronic Logging Device</h1>
+          <p>
+            TrackEnsure predicts the strategies that the trucking companies may
+            want to employ. Our drive for innovation moves us to produce new
+            types of products that at some point may become industry standards.
+            From fuel control automation to asset identification, from software
+            to hardware to data operations we are working on pushing the
+            technological future of trucking further than ever thought possible
+            before.
+          </p>
+          <div class="buttons">
+            <a href="#" class="button">Get it on Play Market</a>
+            <a href="#" class="button">Download on the App Store</a>
+          </div>
+        </div>
+        <div class="slide" style="background-image: url('./img/photo_4.jpg')">
+          <h1>Innovation</h1>
+          <p>
+            Inspection Report<br />Providing the Owner Operator and a Fleet
+            Owner with ability to receive cheaper services through TrackEnsure
+            Marketplace. The services will be offered by various providers who
+            could offer fuel discounts, better factoring options, more efficient
+            logistics, etc. The ELD user will be able to post his or her own
+            offers and requests.
+          </p>
+          <div class="buttons">
+            <a href="#" class="button">Get it on Play Market</a>
+            <a href="#" class="button">Download on the App Store</a>
+          </div>
+        </div>
+        <div class="indicator">
+          <div class="active"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
+
+      <section class="services">
+        <h2>Services We Provide</h2>
+        <div class="services-slider">
+          <div class="services-track">
+            <div class="service-card">
+              <img src="./img/assets_map.jpg" alt="Assets Map" />
+              <h3>Assets Map</h3>
+              <div class="description">
+                Displaying integrated information of real time movement of all
+                company assets, HOS data, road conditions collected from
+                multiple data sources.
+                <button class="read-more">Read more</button>
+              </div>
+            </div>
+            <div class="service-card">
+              <img
+                src="./img/fuel-card-protection.jpg"
+                alt="Fuel Card Protection"
+              />
+              <h3>Fuel Card Protection</h3>
+              <div class="description">
+                Protecting your business from fuel card related fraud. Providing
+                fraud prevention measures with automated detection of card
+                misuse. Issuing a one time PIN code to the driver upon a fuel
+                request.
+                <button class="read-more">Read more</button>
+              </div>
+            </div>
+            <div class="service-card">
+              <img src="./img/eld.jpg" alt="Electronic Logging Device" />
+              <h3>Electronic Logging Device</h3>
+              <div class="description">
+                Providing easy to use ELD/HOS solution, compliant with FMCSA
+                regulations eCFR Title 49, part 395. Providing DVIR solution as
+                part of the ELD/HOS module. (ELD/HOS Report Analyzer)
+                <button class="read-more">Read more</button>
+              </div>
+            </div>
+            <div class="service-card">
+              <img
+                src="./img/notifications.jpg"
+                alt="Event Triggering and Notifications"
+              />
+              <h3>Event Triggering and Notifications</h3>
+              <div class="description">
+                Providing notifications to the personnel about assets entering
+                or leaving yard and other locations.
+                <button class="read-more">Read more</button>
+              </div>
+            </div>
+            <div class="service-card">
+              <img src="./img/reporting.jpg" alt="Reporting and Dashboards" />
+              <h3>Reporting and Dashboards</h3>
+              <div class="description">
+                Reporting based on the integrated information collected from all
+                systems, including dispatch, GPS, HOS, fuel card management.
+                <button class="read-more">Read more</button>
+              </div>
+            </div>
+            <div class="service-card">
+              <img src="./img/gps.jpg" alt="GPS, RFID, IR equipment" />
+              <h3>GPS, RFID, IR equipment</h3>
+              <div class="description">
+                Providing IR equipment for maintaining precise information on
+                hooking transports together from individual trucks and trailers.
+                <button class="read-more">Read more</button>
+              </div>
+            </div>
+          </div>
+          <button class="prev">❮</button>
+          <button class="next">❯</button>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
-    <script>
-      let currentSlide = 0;
-
-      function nextSlide() {
-        const slides = document.querySelectorAll(".slide");
-        slides[currentSlide].classList.remove("active");
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add("active");
-      }
-    </script>
+    <script src="./js/service.js"></script>
+    <script src="./js/slide.js"></script>
   </body>
 </html>
