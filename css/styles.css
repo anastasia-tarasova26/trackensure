@@ -381,3 +381,128 @@ button.prev {
 button.next {
   right: 10px;
 }
+
+/* О компании*/
+
+.company-info {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-container {
+  max-width: 1200px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Левая часть с текстом */
+.company-content {
+  flex: 1;
+}
+
+.company-content h2 {
+  font-size: 2.5rem;
+  color: #173ec1;
+  margin-bottom: 20px;
+}
+
+.company-content h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.company-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.company-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-btn {
+  background-color: #173ec1;
+  color: white;
+}
+
+.main-btn:hover {
+  background-color: #0056b3;
+}
+
+.alt-btn {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.alt-btn:hover {
+  background-color: #cccccc;
+}
+
+/* Правая часть со слайдером */
+.company-slider-wrapper {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.company-slider-window {
+  width: 100%;
+  overflow: hidden;
+}
+
+.company-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.company-slide {
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.company-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Индикаторы */
+.slider-indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.indicator-dot.active {
+  background-color: #173ec1;
+}
