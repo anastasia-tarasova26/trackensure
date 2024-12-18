@@ -633,3 +633,137 @@ button.next {
     flex: 1 1 100%;
   }
 }
+
+/* Продукты */
+
+.products-section {
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+}
+
+.products-section h2 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  color: #173ec1;
+}
+
+.products-section p {
+  font-size: 1.1em;
+  color: #666;
+  margin: 10px auto 30px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.product-carousel {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  justify-content: center;
+}
+
+.product-card {
+  flex: 0 0 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1em;
+  color: #666;
+  margin: 0 10px;
+  flex-grow: 1;
+}
+
+.product-card .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0 20px;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .learn-more {
+  background-color: #007bff;
+  color: white;
+}
+
+.product-card .buy-now {
+  background-color: #28a745;
+  color: white;
+}
+
+.product-card button:hover {
+  opacity: 0.9;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel-arrow.left {
+  left: 20px;
+}
+
+.carousel-arrow.right {
+  right: 20px;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.product-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.product-carousel::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.product-carousel::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}

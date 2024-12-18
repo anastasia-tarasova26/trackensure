@@ -224,7 +224,50 @@
           <button class="next">❯</button>
         </div>
       </section>
+      <section class="products-section">
+        <h2>Products</h2>
+        <p>
+          Shop our new arrivals and best sellers. Click on the image to see
+          product details and click Buy to add a product to cart. We are
+          committed to give you the best buying experience!
+        </p>
 
+        <button class="carousel-arrow left" onclick="scrollCarousel(-1)">
+          &#8249;
+        </button>
+        <div class="product-carousel" id="productCarousel">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 1" />
+            <h3>Product 1</h3>
+            <p>High-quality product that meets your needs.</p>
+            <div class="buttons">
+              <button class="learn-more">Learn More</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 2" />
+            <h3>Product 2</h3>
+            <p>Efficient and reliable for everyday use.</p>
+            <div class="buttons">
+              <button class="learn-more">Learn More</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Product 3" />
+            <h3>Product 3</h3>
+            <p>A top-seller with excellent performance.</p>
+            <div class="buttons">
+              <button class="learn-more">Learn More</button>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-arrow right" onclick="scrollCarousel(1)">
+          &#8250;
+        </button>
+      </section>
       <section class="company-info">
         <div class="company-container">
           <!-- Левая часть с текстом -->
@@ -347,8 +390,9 @@
     </main>
 
     <footer></footer>
-    <script src="./js/service.js"></script>
     <script src="./js/slide.js"></script>
+    <script src="./js/service.js"></script>
+    <script src="./js/product.js"></script>
     <script src="./js/about.js"></script>
   </body>
 </html>
