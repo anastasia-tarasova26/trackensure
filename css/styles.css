@@ -730,29 +730,28 @@ button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #63b8f3;
   color: white;
   border: none;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 1.5rem;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 10;
+  transition: background-color 0.3s;
 }
 
 .carousel-arrow.left {
-  left: 20px;
+  left: 10px;
 }
 
 .carousel-arrow.right {
-  right: 20px;
+  right: 10px;
 }
 
 .carousel-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #0056b3;
 }
 
 .product-carousel::-webkit-scrollbar {
@@ -765,5 +764,5 @@ button.next {
 }
 
 .product-carousel::-webkit-scrollbar-thumb:hover {
-  background-color: #aaa;
+  background-color: #0056b3;
 }
